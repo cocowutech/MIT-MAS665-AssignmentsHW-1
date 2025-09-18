@@ -35,7 +35,7 @@ How To Run
    ```
    OPENROUTER_API_KEY=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
    OPENROUTER_BASE_URL=https://openrouter.ai/api/v1
-   MODEL=openrouter/deepseek/deepseek-chat-v3.1:free
+   export MODEL=openrouter/deepseek/deepseek-chat-v3.1:free
    export OPENAI_API_KEY="$OPENROUTER_API_KEY"
    export OPENAI_BASE_URL="$OPENROUTER_BASE_URL"
    ```
