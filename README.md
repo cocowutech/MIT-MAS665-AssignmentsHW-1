@@ -31,7 +31,7 @@ Implementation Summary
 How To Run
 ----------
 1) Add your `OPENAI_API_KEY` to `.env` if required by your runtime.
-1.1) For learning purposes, I expose my secret from an unpaid account.
+2) For learning purposes, I expose my secret from an unpaid account. You skip this if you have section 1
    ```
    OPENROUTER_API_KEY=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
    OPENROUTER_BASE_URL=https://openrouter.ai/api/v1
@@ -39,12 +39,12 @@ How To Run
    export OPENAI_API_KEY="$OPENROUTER_API_KEY"
    export OPENAI_BASE_URL="$OPENROUTER_BASE_URL"
    ```
-2) I assume crewai is installed, otherwise go here: https://docs.crewai.com/en/installation
-3) From project root:
+4) I assume crewai is installed, otherwise go here: https://docs.crewai.com/en/installation
+5) From project root:
    ```bash
    uv run crewai run
    ```
-4) Adjust inputs in `src/edu_sales/main.py` to test different prompts.
+6) Adjust inputs in `src/edu_sales/main.py` to test different prompts.
 
 What Worked
 -----------
