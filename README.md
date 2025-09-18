@@ -33,11 +33,10 @@ How To Run
 1) Add your `OPENAI_API_KEY` to `.env` if required by your runtime.
 2) For learning purposes, I expose my secret from an unpaid account. You skip this if you have section 1
    ```
-   OPENROUTER_API_KEY=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
-   OPENROUTER_BASE_URL=https://openrouter.ai/api/v1
-   export MODEL=openrouter/deepseek/deepseek-chat-v3.1:free
-   export OPENAI_API_KEY="$OPENROUTER_API_KEY"
-   export OPENAI_BASE_URL="$OPENROUTER_BASE_URL"
+  os.environ["LLM_PROVIDER"] = "openrouter"
+  os.environ["LLM_MODEL"] = "openrouter/deepseek/deepseek-chat-v3.1:free"
+  os.environ["LLM_API_KEY"] = "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"
+  os.environ["LLM_BASE_URL"] = "https://openrouter.ai/api/v1"
    ```
 4) I assume crewai is installed, otherwise go here: https://docs.crewai.com/en/installation
 5) From project root:
