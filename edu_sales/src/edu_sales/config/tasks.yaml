@@ -1,0 +1,55 @@
+intro_task:
+  description: >
+    Introduce Coco to the class using ProfileResponder as grounding. Reflect Coco's voice and
+    keep it to 3–5 sentences. End with 1 next step for the audience.
+    Follow this instruction: {intro_prompt}
+    Use this context to stay factual and consistent:
+    {persona_context}
+  expected_output: >
+    A short first-person introduction that sounds like Coco and references key strengths.
+    Human-friendly tone. No code blocks. No backticks. Do not mention tool names.
+    Write in English only. Do not include JSON.
+  agent: coco
+  output_file: outputs/intro.md
+
+china_ecosystem_task:
+  description: >
+    Explain the Chinese education ecosystem at a high level for a new parent audience.
+    Provide a clear structure.
+    Address this: {china_question}
+    Use this context to ensure accuracy:
+    {china_context}
+  expected_output: >
+    5–8 concise bullet points explaining structure, key milestones, and practical tips.
+    Human-friendly tone. No code blocks. No backticks. Do not mention tool names.
+    Write in English only. Do not include JSON.
+  agent: coco
+  output_file: outputs/china_ecosystem.md
+
+email_draft_task:
+  description: >
+    Draft a client email using EmailDraftTool. Incorporate the tool output and polish wording.
+    Use these details — Recipient: {email_recipient}; Purpose: {email_purpose}; CTA: {email_cta}.
+    You may reference these contact details and persona facts:
+    {persona_context}
+    {faq_context}
+  expected_output: >
+    Subject line and a concise email body ready to send in plain text.
+    Human-friendly tone. No code blocks. No backticks. Do not mention tool names.
+    Write in English only. Do not include JSON.
+  agent: coco
+  output_file: outputs/email_draft.md
+
+bootcamp_qa_task:
+  description: >
+    Answer a prospective client's question about the bootcamp using BootcampFAQTool.
+    If the FAQ does not cover the question fully, state what is known and what needs confirmation.
+    Question: {bootcamp_question}
+    Use this official FAQ context to answer:
+    {faq_context}
+  expected_output: >
+    A clear answer with any relevant policy details and an invitation for next steps.
+    Human-friendly tone. No code blocks. No backticks. Do not mention tool names.
+    Write in English only. Do not include JSON.
+  agent: coco
+  output_file: outputs/bootcamp_qa.md
