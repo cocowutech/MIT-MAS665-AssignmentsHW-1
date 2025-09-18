@@ -1,0 +1,6 @@
+* **Basic Structure:**  Children typically start with optional kindergarten (ages 3-6), followed by nine years of compulsory education (primary school, grades 1-6, and middle school, grades 7-9).
+* **High School Pathways:** After middle school, students can choose between academic high school (preparing for the Gaokao university entrance exam) or vocational high school (a path to vocational colleges).
+* **The Gaokao:**  This crucial national exam is the primary pathway to Chinese universities. Its importance is comparable to the SAT/ACT combined with AP exams, but with significantly higher stakes.
+* **International Options:**  International curricula (A-Levels, IB, AP) are available, often within international schools or designated departments of Chinese schools, providing pathways to universities globally.
+* **University Landscape:** China's universities range from top-tier institutions (like the prestigious C9 League) to other respected universities. Admission is largely determined by Gaokao scores, though special talent programs offer alternative routes.
+* **Current Trends:**  The emphasis on practical skills like STEM and AI is increasing.  Many students are also considering studying abroad.
