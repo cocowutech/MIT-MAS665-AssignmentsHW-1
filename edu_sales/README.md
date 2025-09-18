@@ -32,12 +32,19 @@ How To Run
 ----------
 1) Add your `OPENAI_API_KEY` to `.env` if required by your runtime.
 2) For learning purposes, I expose my secret (.env) from an unpaid account. You skip this if you have section 1
-3) I assume crewai is installed, otherwise go here: https://docs.crewai.com/en/installation
-4) From project root:
+2.1)
+    ```
+    # Note: Gemini / OpenAI model did much better work!! The free deepseek is often skiping the instructions
+    OPENROUTER_API_KEY=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
+    OPENROUTER_BASE_URL=https://openrouter.ai/api/v1
+    OPENROUTER_MODEL=openrouter/deepseek/deepseek-chat-v3.1:free
+    ```
+4) I assume crewai is installed, otherwise go here: https://docs.crewai.com/en/installation
+5) From project root:
    ```bash
    uv run crewai run
    ```
-5) Adjust inputs in `src/edu_sales/main.py` to test different prompts.
+6) Adjust inputs in `src/edu_sales/main.py` to test different prompts.
 
 What Worked
 -----------
