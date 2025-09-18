@@ -33,7 +33,7 @@ How To Run
 1) Add your `OPENAI_API_KEY` to `.env` if required by your runtime.
 2) For learning purposes, I expose my secret from an unpaid account. You skip this if you have section 1
    ```
-   OPENROUTER_API_KEY=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
+   OPENROUTER_API_KEY=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
    OPENROUTER_BASE_URL=https://openrouter.ai/api/v1
    export MODEL=openrouter/deepseek/deepseek-chat-v3.1:free
    export OPENAI_API_KEY="$OPENROUTER_API_KEY"
