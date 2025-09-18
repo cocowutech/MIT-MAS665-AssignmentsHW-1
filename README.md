@@ -31,11 +31,18 @@ Implementation Summary
 How To Run
 ----------
 1) Add your `OPENAI_API_KEY` to `.env` if required by your runtime.
-2) From project root:
+1.1) For learning purposes, I expose my secret from an unpaid account.
+1.1.1) OPENROUTER_API_KEY=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
+1.1.2) OPENROUTER_BASE_URL=https://openrouter.ai/api/v1
+1.1.3) MODEL=openrouter/deepseek/deepseek-chat-v3.1:free
+1.1.4) export OPENAI_API_KEY="$OPENROUTER_API_KEY"
+1.1.5) export OPENAI_BASE_URL="$OPENROUTER_BASE_URL"
+2) I assume crewai is installed, otherwise go here: https://docs.crewai.com/en/installation
+3) From project root:
    ```bash
    uv run crewai run
    ```
-3) Adjust inputs in `src/edu_sales/main.py` to test different prompts.
+4) Adjust inputs in `src/edu_sales/main.py` to test different prompts.
 
 What Worked
 -----------
@@ -61,5 +68,3 @@ What I Learned
 - Clear expected_output fields improve consistency across runs.
 - There are so many open tier tokens to be used, I started by paying to OpenAI > 100$ but after some research I now understand this technology is much more accessible than ever before
 - Working with commits is so important. As I was working on this project, the commits in my original repo expanded so much. I ended up creating an entirely new git repo because the history graph was such a mess.
-- 
-
